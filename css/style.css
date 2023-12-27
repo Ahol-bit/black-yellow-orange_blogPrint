@@ -1,0 +1,350 @@
+@import url('https://fonts.googleapis.com/css2?family=Rowdies:wght@300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    list-style: none;
+    box-sizing: border-box;
+    line-height: 1;
+    text-decoration: none;
+}
+
+
+body {
+    font: 20px/28px arial, sans-serif;
+    background-color: white;
+    height: 10000px;
+}
+
+.navbar {
+    z-index: 100;
+    position: fixed;
+    background-color: white;
+    width: 100%;
+    height: 65px;
+    border-bottom: 5px rgb(255, 136, 0) solid;
+}
+
+.navbar img.icon {
+    position: absolute;
+    top: 20%;
+    left: 1%;
+    width: 50px;
+    transform: rotate(-30deg);
+    z-index: 300;
+}
+
+.navbar h1 {
+    opacity: 1;
+    font-family: 'Rowdies', cursive;
+    font-size: 40px;
+    color: rgb(255, 136, 0);
+    text-transform: uppercase;
+    position: absolute;
+    line-height: 65px;
+    left: 3.2%;
+    top: -5px;
+    margin-left: 3px;
+}
+
+.navbar::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 40%;
+    height: 60px;
+    border-bottom: 5px #fff000 solid;
+}
+
+.navbar::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    width: 40%;
+    height: 60px;
+    border-bottom: 5px rgb(0, 0, 0) solid;
+}
+
+
+#menu-toggle.menu-toggle {
+    position: fixed;
+    cursor: pointer;
+    width: 55px;
+    top: 10px;
+    right: 30px;
+    z-index: 3000;
+}
+
+.menu-toggle div {
+    background-color: rgb(0, 0, 0);
+    border-radius: 25px;
+    box-shadow: 0px 3px 13px rgba(0, 0, 0, .3);
+    height: 7px;
+    
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(.13, .24, .35, 1.64);
+}
+
+.menu-toggle .one, .menu-toggle .two {
+    margin-bottom: 7px;
+}
+
+
+.slashed .orange {
+    position: absolute;
+    width: 1750px;
+    height: 130px;
+    transform: translate(1300px, 100px) rotate(-30deg);
+    background-color: #f56d13;
+}
+
+/* .slashed .black {
+    position: absolute;
+    width: 2180px;
+    height: 150px;
+    transform: translate(200px, 115px) rotate(16deg);
+    background-color: black;
+} */
+
+
+.main-header {
+    overflow: hidden;
+    position: relative;
+    background-color: white;
+    height: 500px;
+    width: 100%;
+    border-bottom: 11px #fff000 solid;
+    box-shadow: 0 3px 10px black;
+}
+
+
+
+.masthead {
+    position: relative;
+    margin: auto;
+    justify-content: space-between;
+}
+
+.masthead h1 {
+    font-family: 'Rowdies', cursive;
+    font-size: 60px;
+    position: absolute;
+    line-height: 500px;
+    left: 26px;
+    text-transform: uppercase;
+    text-shadow: 0 3px 3px black;
+}
+
+span.inOrange {
+    color: rgb(255, 136, 0);
+}
+
+span.inYellow {
+    color: #fff000;
+}
+
+.main-nav-list ul {
+    font-family: 'Rowdies', cursive;
+    text-transform: uppercase;
+    position: fixed;
+    background-color: #f56d13;
+    display: block;
+    height: 100%;
+    width: 28vw;
+    top: 0;
+    right: -750px;
+    /* transform: translate(-50%, -50%); */
+    padding: 10px;
+    transition-duration: 300ms;
+    transition-timing-function: ease-in-out;
+}
+ 
+.main-nav-list ul li {
+    margin-bottom: 15px;
+}
+
+.main-nav-list a{
+    position: relative;
+    top: 250px;
+    left: 150px;
+    font-size: 55px;
+    letter-spacing: 5px;
+    opacity: 1;
+    text-align: center;
+    text-decoration: none;
+    transition-delay: 130ms;
+    color: white;
+}
+
+.main-nav-list a:hover {
+    border-bottom: 5px black solid;
+    border-top: 5px #fff000 solid;
+}
+
+
+.search-box input {
+    font-size: 20px;
+    font-weight: bold;
+    color: black;
+    position: absolute;
+    top: 10px;
+    right: 150px;
+    z-index: 9999;
+    background-color: rgb(223, 219, 219);
+    width: 400px;
+    height: 3vh;
+    border-radius: 3vh;
+}
+
+.content {
+    display: flex;
+    flex: auto;
+    width: 1900px;
+    margin: 20px auto;
+    height: 100%;
+}
+
+.content .main h1, .content h2 {
+    font-family: 'Rowdies', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 2rem;
+}
+
+.main {
+    position: relative;
+    float: left;
+    width: 70%;
+    margin: 20px auto;
+    padding: 10px;
+    box-shadow: -2px 1px 2px black;
+    border-right: 4px black solid;
+    overflow: hidden;
+}
+
+.main img {
+    padding: 20px;
+    width: 300px;
+    float: left;
+}
+
+.slashed-content {
+    position: relative;
+    padding: 10px;
+    margin-top: 30px;
+    position: relative;
+    right: 0;
+    left: 0;
+    height: 300px;
+    background-color: #f56d13;
+}
+
+.slashed-content p {
+    font-family: 'Rowdies', cursive;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    line-height: 300px;
+    font-size: 60px;
+    font-weight: bold;
+    color: aliceblue;
+}
+
+/* .slashed-content a {
+    position: absolute;
+    top: 150px;
+    left: 50%;
+    color: rgb(255, 255, 255);
+    font-size: 80px;
+    transform: rotate(180deg);
+    text-decoration: underline;
+} */
+
+.sidebar {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    position: relative;
+    float: right;
+    width: 25%;
+    height: 7%;
+    margin: 20px auto;
+    box-shadow: 0px 0px 1px black;
+    padding: 10px;
+    border-left: 5px #fffb00 solid;
+    border-bottom: 5px #f56d13 solid;
+}
+
+.sidebar img.ichigo {
+    margin: 0 2.5em;
+    width: 300px;
+    height: 300px;
+    border-bottom-right-radius: 50%;
+}
+
+
+.sidebar .socials {
+    position: absolute;
+    width: 50px;
+    display: block;
+    top: 72px;
+    right: 20px;
+}
+
+
+.sidebar .socials a img {
+    margin-bottom: 25px;
+    width: 40px;
+    height: 40px;
+    box-sizing: border-box;
+    
+}
+
+
+/* ************** */
+.wrapper.active {
+    opacity: .5;
+    z-index: 200;
+    position: absolute;
+    background-color: black;
+    height: 10000px;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.navbar.active h1 {
+    opacity: 0;
+    transition-delay: 260ms;
+    transition-duration: 140ms;
+}
+
+.main-nav-list.active ul {
+    z-index: 300;
+    right: 0;
+    transition-delay: 360ms;
+    transition-duration: 240ms;
+    transition-timing-function: cubic-bezier(.1, .2, .3, 1);
+}
+
+.menu-toggle.active .one {
+    box-shadow: 0px 3px 13px rgba(0, 0, 0, .4);
+    transform: translate(0, 14px) rotate(45deg);
+    z-index: 500;
+}
+
+.menu-toggle.active .two {
+    background-color: transparent;
+    box-shadow: none;
+    transform: translateX(-55px);
+    z-index: 500;
+}
+
+.menu-toggle.active .three {
+    box-shadow: 0px 3px 13px rgba(0, 0, 0, .4);
+    transform: translate(0, -14px) rotate(-45deg);
+    z-index: 500;
+}
+
+
+
+
